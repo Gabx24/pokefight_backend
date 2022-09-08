@@ -68,6 +68,7 @@ app.get("/pokemon/:id/:info", async (req, res) => {
   // res.end();
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}`);
 });
